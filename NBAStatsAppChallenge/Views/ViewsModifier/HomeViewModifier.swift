@@ -15,3 +15,10 @@ struct homeViewModifier: ViewModifier {
             .ignoresSafeArea(.container)
         }
 }
+
+struct rectangleHomeModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .shadow(radius: 1)
+    }   
+}

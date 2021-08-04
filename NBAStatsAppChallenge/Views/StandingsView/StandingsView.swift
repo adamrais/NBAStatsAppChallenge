@@ -21,7 +21,7 @@ struct StandingsView: View {
                     StandingRow(teamID: standing.ConferenceRank, teamName: standing.Name, W: standing.Wins, L: standing.Losses)
                         .modifier(leftRightPadding())
                 }
-           }
+            }
         }.modifier(standingViewModifier())
         .onAppear {
             vm.fetchStandings()

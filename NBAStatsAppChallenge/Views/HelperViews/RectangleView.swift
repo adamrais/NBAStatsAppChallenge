@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct RectangleView: View {
+    var AwayTeam: String
+    var HomeTeam: String
+    var AwayTeamScore: Int
+    var HomeTeamScore: Int
+    
     var body: some View {
         VStack {
             ZStack {
@@ -20,17 +25,17 @@ struct RectangleView: View {
                         VStack {
                             Image("home-team")
                                 .imageLogoModifier()
-                            Text("Name of the team")
+                            Text("\(HomeTeam)")
                                 .fontWeight(.light)
-                            Text("Score of the team")
+                            Text("\(HomeTeamScore)")
                                 .fontWeight(.light)
                         }
                         Text("VS")
                         VStack {
                             Image("visitor-team")
                                 .imageLogoModifier()
-                            Text("Name of the team")
-                            Text("Score of the team")
+                            Text("\(AwayTeam)")
+                            Text("\(AwayTeamScore)")
                         }
                     }
                     Text("Date scheduled")
@@ -42,6 +47,6 @@ struct RectangleView: View {
 
 struct RectangleView_Previews: PreviewProvider {
     static var previews: some View {
-        RectangleView()
+        RectangleView(AwayTeam: "adam", HomeTeam: "adam2", AwayTeamScore: 5, HomeTeamScore: 6)
     }
 }

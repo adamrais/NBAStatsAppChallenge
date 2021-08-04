@@ -19,7 +19,7 @@ struct standingData: Codable {
     var Division: String
     var Wins: Int
     var Losses: Int
-    var Percentage: Float
+    //var Percentage: Float
     var ConferenceWins: Int
     var ConferenceLosses: Int
     var DivisionWins: Int

@@ -8,22 +8,27 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var vm: standingsCall
     var body: some View {
         VStack {
             SegmentedControlView()
                 .padding()
             ScrollView(showsIndicators: false) {
-                ForEach(0 ..< 1) { item in
-                    RectangleView()
-                        .shadow(radius: 1)
+                ForEach(vm.fixtures, id: \.GameID) { fixture in
+                    RectangleView(AwayTeam: fixture.AwayTeam, HomeTeam: fixture.HomeTeam, AwayTeamScore: fixture.AwayTeamScore, HomeTeamScore: fixture.HomeTeamScore)
+                        .modifier(rectangleHomeModifier())
                 }.listRowBackground(Color("custom-gray"))
             }            
         }.modifier(homeViewModifier())
+        .onAppear {
+            vm.fetchFixtures()
+        }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(standingsCall())
     }
 }

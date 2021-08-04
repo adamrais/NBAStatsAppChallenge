@@ -22,7 +22,9 @@ struct SegmentedControlView: View {
     }
     var dates = ["Yesterday","Today", "Tomorrow"]
     @State private var selectedDate = 0
-        
+//    Text("Yesterday").tag("yesterday")
+//    Text("Today").tag("today")
+//    Text("Tomorrow").tag("tomorrow")
     var body: some View {
         VStack {
             Picker("", selection: $selectedDate) {

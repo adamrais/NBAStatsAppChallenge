@@ -15,6 +15,7 @@
 		E55CA6B926B1B168003B5C3B /* dumpData.txt in Resources */ = {isa = PBXBuildFile; fileRef = E55CA6B826B1B168003B5C3B /* dumpData.txt */; };
 		E55CA6BC26B1DEA7003B5C3B /* standingApiCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55CA6BB26B1DEA7003B5C3B /* standingApiCalls.swift */; };
 		E55CA6BE26B1E28A003B5C3B /* TestApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55CA6BD26B1E28A003B5C3B /* TestApiView.swift */; };
+		E55CA6C126B471C1003B5C3B /* FixturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55CA6C026B471C0003B5C3B /* FixturesModel.swift */; };
 		E580CA8626AB4BCB00F1331A /* HomeViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E580CA8526AB4BCB00F1331A /* HomeViewModifier.swift */; };
 		E580CA8926AB4D1400F1331A /* Extension+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E580CA8826AB4D1400F1331A /* Extension+Image.swift */; };
 		E580CA8B26AEFF3F00F1331A /* SegmentedControlStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E580CA8A26AEFF3F00F1331A /* SegmentedControlStandings.swift */; };
@@ -41,6 +42,7 @@
 		E55CA6B826B1B168003B5C3B /* dumpData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = dumpData.txt; sourceTree = "<group>"; };
 		E55CA6BB26B1DEA7003B5C3B /* standingApiCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = standingApiCalls.swift; sourceTree = "<group>"; };
 		E55CA6BD26B1E28A003B5C3B /* TestApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiView.swift; sourceTree = "<group>"; };
+		E55CA6C026B471C0003B5C3B /* FixturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesModel.swift; sourceTree = "<group>"; };
 		E580CA8526AB4BCB00F1331A /* HomeViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModifier.swift; sourceTree = "<group>"; };
 		E580CA8826AB4D1400F1331A /* Extension+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Image.swift"; sourceTree = "<group>"; };
 		E580CA8A26AEFF3F00F1331A /* SegmentedControlStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlStandings.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				E55CA6B526B1AC6E003B5C3B /* StandingModel.swift */,
+				E55CA6C026B471C0003B5C3B /* FixturesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				E580CA9126AF4AEB00F1331A /* StandingViewModifiers.swift in Sources */,
 				E55CA6B426B09C2E003B5C3B /* WestListView.swift in Sources */,
 				E580CA8926AB4D1400F1331A /* Extension+Image.swift in Sources */,
+				E55CA6C126B471C1003B5C3B /* FixturesModel.swift in Sources */,
 				E5E4C7832693FED800133BDF /* RectangleView.swift in Sources */,
 				E55CA6BC26B1DEA7003B5C3B /* standingApiCalls.swift in Sources */,
 				E55CA6BE26B1E28A003B5C3B /* TestApiView.swift in Sources */,
