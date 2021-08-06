@@ -12,7 +12,7 @@ struct RectangleView: View {
     var HomeTeam: String
     var AwayTeamScore: Int
     var HomeTeamScore: Int
-    
+    var dateScheduled: String
     var body: some View {
         VStack {
             ZStack {
@@ -35,10 +35,13 @@ struct RectangleView: View {
                             Image("visitor-team")
                                 .imageLogoModifier()
                             Text("\(AwayTeam)")
+                                .fontWeight(.light)
                             Text("\(AwayTeamScore)")
+                                .fontWeight(.light)
                         }
                     }
-                    Text("Date scheduled")
+                    Text("\(dateScheduled)")
+                        .fontWeight(.light)
                 }
             }
         }
@@ -47,6 +50,6 @@ struct RectangleView: View {
 
 struct RectangleView_Previews: PreviewProvider {
     static var previews: some View {
-        RectangleView(AwayTeam: "adam", HomeTeam: "adam2", AwayTeamScore: 5, HomeTeamScore: 6)
+        RectangleView(AwayTeam: "adam", HomeTeam: "adam2", AwayTeamScore: 5, HomeTeamScore: 6, dateScheduled: "today")
     }
 }

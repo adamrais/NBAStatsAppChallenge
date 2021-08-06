@@ -38,7 +38,7 @@ class standingsCall: ObservableObject {
         }
     
     func fetchFixtures() {
-        let urlString = "https://api.sportsdata.io/v3/nba/scores/json/GamesByDate/2021-JUL-20?key=cbb647ed20f9450c931354ff0d89f8c1"
+        let urlString = "https://api.sportsdata.io/v3/nba/scores/json/GamesByDate/2021-JUN-05?key=cbb647ed20f9450c931354ff0d89f8c1"
         //let urlString = "https://api.sportsdata.io/v3/nba/scores/json/GamesByDate/\(fixtureDate)?key=cbb647ed20f9450c931354ff0d89f8c1"
         
         guard let url = URL(string: urlString) else {

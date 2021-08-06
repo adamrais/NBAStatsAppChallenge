@@ -14,11 +14,15 @@ struct HomeView: View {
             SegmentedControlView()
                 .padding()
             ScrollView(showsIndicators: false) {
-                ForEach(vm.fixtures, id: \.GameID) { fixture in
-                    RectangleView(AwayTeam: fixture.AwayTeam, HomeTeam: fixture.HomeTeam, AwayTeamScore: fixture.AwayTeamScore, HomeTeamScore: fixture.HomeTeamScore)
-                        .modifier(rectangleHomeModifier())
-                }.listRowBackground(Color("custom-gray"))
-            }            
+                if vm.fixtures.count == 0 {
+                    Text("No games")
+                } else {
+                    ForEach(vm.fixtures, id: \.GameID) { fixture in
+                        RectangleView(AwayTeam: fixture.AwayTeam, HomeTeam: fixture.HomeTeam, AwayTeamScore: fixture.AwayTeamScore ?? 0, HomeTeamScore: fixture.HomeTeamScore ?? 0, dateScheduled: fixture.Day)
+                            .modifier(rectangleHomeModifier())
+                    }.listRowBackground(Color("custom-gray"))
+                }
+            }.padding()
         }.modifier(homeViewModifier())
         .onAppear {
             vm.fetchFixtures()
